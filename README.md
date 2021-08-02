@@ -18,4 +18,4 @@ create a `Cookie Stand Admin` app using [Next.js](https://nextjs.org/){:target="
 
 
 ## PR 
-PR [link]()
+PR [link](https://github.com/baselatalla/cookie-stand-admin/pull/1)
