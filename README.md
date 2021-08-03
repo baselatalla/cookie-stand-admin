@@ -21,6 +21,7 @@ create a `Cookie Stand Admin` app using [Next.js](https://nextjs.org/){:target="
 PR [link](https://github.com/baselatalla/cookie-stand-admin/pull/1)
 
 
+
 --------------------------------------------------lab-38------------------------------------------------------
 
 ## lab-38: React2 (Cookie Stand Admin Version 2)
@@ -39,3 +40,4 @@ React: https://basel-cookie-stand-admin.vercel.app/
 ## PR
 
 PR: [link](https://github.com/baselatalla/cookie-stand-admin/pull/2)
+
