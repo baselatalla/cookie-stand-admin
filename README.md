@@ -19,3 +19,25 @@ create a `Cookie Stand Admin` app using [Next.js](https://nextjs.org/){:target="
 
 ## PR 
 PR [link](https://github.com/baselatalla/cookie-stand-admin/pull/1)
+
+
+
+--------------------------------------------------lab-38------------------------------------------------------
+
+## lab-38: React2 (Cookie Stand Admin Version 2)
+
+## Problem Domain
+
+Your job is to continue work on Cookie Stand Admin app using Next.js and style using Tailwind CSS.
+
+- starting time: 5:30 pm
+- Finish time:10pm
+  
+## Deployed URL
+
+React: https://basel-cookie-stand-admin.vercel.app/
+
+## PR
+
+PR: [link](https://github.com/baselatalla/cookie-stand-admin/pull/2)
+
