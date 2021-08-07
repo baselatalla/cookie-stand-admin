@@ -1,4 +1,17 @@
+
+import { BsTrash } from "react-icons/bs";
+import {useState} from "react";
+
 export default function Table(props){
+
+    const [removeid, setremoveid] = useState('');
+    function remove_handler(event){
+      event.preventDefault();
+      let id = event.target.id;
+      console.log(id);
+      setremoveid(id);
+      props.remove_requst(id)
+    }
     return(
         <div className="flex flex-col text-center">
          
@@ -7,7 +20,7 @@ export default function Table(props){
               <table className="w=1/2 mx-auto my-4 p-3">
               <thead>
                 <tr className=" ">
-                  <th className=" bg-green-600 p-2">Location</th>
+                  <th className=" bg-green-600 p-2 w-1/12">Location</th>
                     {
                     props.time.map(item =>{
                         return(
@@ -16,24 +29,25 @@ export default function Table(props){
                     })
                     
                     }
-                  <th className=" bg-green-600">Totale</th>
+                  <th className=" bg-green-600">Total</th>
                 </tr>
               </thead>
               <tbody>
                 {
                   
-                  props.newBranchs.map(item => {
+                  props.newBranchs.data.map(item => {
                     return(
                       <tr>
-                        <td className=" bg-green-300 border border-black">{item.location}</td>
+                        <td id={item.id} className=" flex flex-row bg-green-300 border border-black w-28 justify-between items-center" >{item.location}<BsTrash id={item.id} onClick={remove_handler}/></td>
                         {
-                            item.randCookPerHour.map(ele =>{
-                                 
+                            item.hourly_sales.map(ele =>{
+                                
                                 return(
                                     <td className=" bg-green-300 border border-black">{ele}</td>
-                                )
-                            })
-                        }
+                                    )
+                                  })
+                                }
+                                
                         
                       </tr>
                     )
