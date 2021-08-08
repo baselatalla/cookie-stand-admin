@@ -13,27 +13,14 @@ export default function CookieStandAdmin(props) {
 
   const [newBranchs, setnewBranchs] = useState([]);
   
-  const [totals, setTotals] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
+  const [totals, setTotals] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);
   
   async function Post_request(data){
     const config = {headers: {'Authorization': 'Bearer ' + props.token}};
     const response = await axios.post('https://cookie-stand-api.herokuapp.com/api/v1/cookie-stands/', data, config);
     if (response.status == 201){
       getdataFromAPI();
-    }
-    
-
-    }
-
-    async function remove_requst(id){
-      const config = {headers: {'Authorization': 'Bearer ' + props.token}};
-      const response = await axios.post('https://cookie-stand-api.herokuapp.com/api/v1/cookie-stands/', data, config);
-      if (response.status == 201){
-        getdataFromAPI();
-      }
-      
-  
-      }
+    }}
 
     useEffect( () => {
       if (props.token){
@@ -100,7 +87,7 @@ export default function CookieStandAdmin(props) {
 
         <Form newlocationHandler= {newlocationHandler}/>
 
-        <Table time={time} newBranchs={newBranchs} totals={totals} remove_requst={remove_requst}/>
+        <Table time={time} newBranchs={newBranchs} totals={totals} getdataFromAPI={getdataFromAPI} token={props.token}/>
 
       </main>
 
