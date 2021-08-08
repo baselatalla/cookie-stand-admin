@@ -83,3 +83,17 @@ React: https://basel-cookie-stand-admin.vercel.app/
 ## PR
 
 PR: [link](https://github.com/baselatalla/cookie-stand-admin/pull/3)
+
+------------------------------------------------------------------------------------------------------------
+
+# LAB 41: Front End Deployment
+
+Deployed since day 1
+
+## Links:
+
+React: [link](https://basel-cookie-stand-admin.vercel.app/)
+
+## PR
+
+PR: [link](https://github.com/baselatalla/cookie-stand-admin/pull/4)
